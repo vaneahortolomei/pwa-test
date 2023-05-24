@@ -116,7 +116,6 @@ button:focus-visible {
     margin: 0 auto;
     width: 100%;
 }
-
 @media (min-width: 1025px) {
     .container {
         max-width: 1200px;
