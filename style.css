@@ -69,19 +69,6 @@ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-    a:hover {
-        color: #747bff;
-    }
-    button {
-        background-color: #f9f9f9;
-    }
-}
-
 .input-area {
     max-width: 500px;
     margin: 50px auto 0;
@@ -120,5 +107,26 @@ button:focus-visible {
 @media (min-width: 1025px) {
     .container {
         max-width: 1200px;
+    }
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+    .input-area__input {
+        border: 1px solid #000000;
+        color: black;
+    }
+    .input-area__output {
+        color: black;
     }
 }
