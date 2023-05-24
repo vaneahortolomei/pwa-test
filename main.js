@@ -29,23 +29,3 @@ const response = debounce(reverseString, 500);
 
 
 input.addEventListener('input', (e) => response(input.value));
-
-
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/main.js');
-    });
-}
-
-self.addEventListener('install', (event) => {
-    event.waitUntil(
-        caches.open('my-app-cache').then((cache) => {
-            return cache.addAll([
-                '/',
-                '/style.css',
-                '/main.js'
-            ]);
-        })
-    );
-});
