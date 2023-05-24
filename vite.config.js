@@ -17,7 +17,7 @@ export default defineConfig({
                 name: 'WordReverse',
                 short_name: 'Reverse',
                 description: 'FirstPWAApp',
-                theme_color: '#000',
+                theme_color: '#ffffff',
                 icons: [
                     {
                         src: 'icon.png',
