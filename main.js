@@ -34,7 +34,7 @@ input.addEventListener('input', (e) => response(input.value));
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        return navigator.serviceWorker.register('/service-worker.js');
+        navigator.serviceWorker.register('/main.js');
     });
 }
 
